@@ -101,7 +101,7 @@ footer{padding:30px 0;color:var(--muted);font-size:.85rem}
     <label class="check"><input type="checkbox" name="consent" value="yes" required> <span>Yes, email me about the Well Kept Paper planner launch and early-bird offer.</span></label>
     <label class="check"><input type="checkbox" name="preorder_interest" value="yes"> <span>Optional: I'd pre-order at the early-bird price when it opens.</span></label>
     <button class="btn" type="submit">Save my early-bird spot</button>
-    <p class="small"><strong>Privacy:</strong> We only use your email to send launch updates about this product. We don't sell it. Signups are emailed to us through our form service, FormSubmit. See our <a href="/privacy">privacy page</a>. Data is handled in line with the NZ Privacy Act 2020; email <a href="mailto:jj@watchwork.au">jj@watchwork.au</a> to access or delete it.</p>
+    <p class="small"><strong>Privacy:</strong> We only use your email to send launch updates about this product. We don't sell it. Signups are emailed to us through our form service, FormSubmit. See our <a href="/privacy">privacy page</a>. Data is handled in line with the NZ Privacy Act 2020; reply to any of our emails to access or delete it.</p>
     <p class="small"><strong>Unsubscribe:</strong> Every email includes a working unsubscribe link, and we'll remove you promptly (Unsolicited Electronic Messages Act 2007).</p>
   </form>
   <div id="signup-thanks" hidden style="background:var(--soft);border-radius:14px;padding:22px" role="status" aria-live="polite">
@@ -112,7 +112,7 @@ footer{padding:30px 0;color:var(--muted);font-size:.85rem}
 
 <footer><div class="wrap">
   &copy; 2026 Well Kept Paper. An organising tool only — not financial, legal or professional advice.
-  &middot; <a href="/privacy">Privacy</a> &middot; <a href="mailto:jj@watchwork.au">jj@watchwork.au</a>
+  &middot; <a href="/privacy">Privacy</a>
 </div></footer>
 <script>
 // Email capture: submit via AJAX so we can show the inline confirmation; without JS the form posts to /thanks.html.
@@ -132,7 +132,7 @@ footer{padding:30px 0;color:var(--muted);font-size:.85rem}
     f.hidden=true; document.getElementById('signup-thanks').hidden=false;
     // SIGNUP COUNT HOOK: Meta Lead event (fires only if the pixel placeholder above has been enabled).
     if(window.fbq){ fbq('track','Lead',{content_name:'early-bird',value:0,currency:'NZD'}); }
-    // LOCAL COUNTER (dev/testing only, per browser, not a real total): real signups arrive by email at jj@watchwork.au. See SIGNUPS.md.
+    // LOCAL COUNTER (dev/testing only, per browser, not a real total): real signups arrive by email. See SIGNUPS.md.
     try{ localStorage.setItem('wkp_signups',(+localStorage.getItem('wkp_signups')||0)+1); }catch(_){}
   }
 })();
