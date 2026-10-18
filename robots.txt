@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /thanks
+Disallow: /dl/
 Sitemap: https://wellkeptpaper.com/sitemap.xml
